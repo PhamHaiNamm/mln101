@@ -1,0 +1,139 @@
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    animation: fadeIn 1s ease-in;
+}
+
+.home-content {
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.title {
+    font-size: 4rem;
+    margin: 0;
+    font-weight: 800;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    opacity: 0.8;
+    margin-top: -1.5rem;
+}
+
+.selection-area {
+    margin: 2rem 0;
+}
+
+.player-options {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.player-btn {
+    min-width: 80px;
+    min-height: 60px;
+    border-radius: 50%;
+    border: 2px solid var(--text-primary);
+    background: transparent;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.5rem;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.player-btn.active {
+    background: var(--text-primary);
+    box-shadow: 0 0 15px var(--text-primary);
+    transform: scale(1.1);
+}
+
+.action-area {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.start-btn {
+    width: 80%;
+}
+
+.secondary-btn {
+    background: transparent;
+    border: 1px solid var(--text-secondary);
+    color: var(--text-secondary);
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.secondary-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.modal-content {
+    max-width: 600px;
+    width: 90%;
+    text-align: left;
+}
+
+.rules-list {
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.rules-list li {
+    margin-bottom: 0.5rem;
+}
+
+.close-btn {
+    display: block;
+    margin: 0 auto;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

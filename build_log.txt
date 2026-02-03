@@ -1,0 +1,10 @@
+
+> cocangua@0.1.0 build
+> react-scripts build
+
+Creating an optimized production build...
+Failed to compile.
+
+Module not found: Error: Can't resolve './context/GameContext' in 'C:\SE\Spring.2026\MLN\cocangua\cocangua\src\components'
+
+

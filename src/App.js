@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { GameProvider, useGame } from './context/GameContext';
+import Home from './components/Home';
+import Board from './components/Board';
+import WinnerScreen from './components/WinnerScreen';
+// Board import will be valid once we create it.
+// For now, we will create a placeholder.
+
+const GameContainer = () => {
+  const { state } = useGame();
+
+  return (
+    <div className="App">
+      {state.currentPage === 'HOME' && <Home />}
+      {state.currentPage === 'GAME' && <Board />}
+      {state.gameState === 'FINISHED' && <WinnerScreen />}
+    </div>
+  );
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <GameProvider>
+      <GameContainer />
+    </GameProvider>
   );
 }
 

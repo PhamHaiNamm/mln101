@@ -1,0 +1,45 @@
+.winner-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.5s;
+}
+
+.winner-content {
+    text-align: center;
+    padding: 3rem;
+    max-width: 500px;
+    background: radial-gradient(circle, #2c3e50, #000);
+}
+
+.trophy-icon {
+    font-size: 5rem;
+    margin: 2rem 0;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}

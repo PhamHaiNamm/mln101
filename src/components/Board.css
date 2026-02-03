@@ -1,0 +1,182 @@
+.game-screen {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+    gap: 2rem;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.left-panel {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.power-board {
+    margin-top: 1rem;
+    width: 100%;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
+.power-board h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.game-logs {
+    margin-top: 1rem;
+    width: 100%;
+    text-align: left;
+    max-height: 150px;
+    overflow-y: auto;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
+.board-container {
+    padding: 1rem;
+    background: white;
+    /* Board needs contrast */
+}
+
+.ludo-grid {
+    display: grid;
+    grid-template-columns: repeat(15, 30px);
+    /* 15 cols x 30px */
+    grid-template-rows: repeat(15, 30px);
+    /* 15 rows x 30px */
+    gap: 2px;
+    background: #eee;
+    padding: 2px;
+    border: 5px solid #333;
+}
+
+/* Stables */
+.stable {
+    grid-row-end: span 6;
+    grid-column-end: span 6;
+    border: 2px solid #333;
+}
+
+.stable-red {
+    grid-row: 1;
+    grid-column: 1;
+    background-color: var(--player-red);
+    opacity: 0.3;
+}
+
+.stable-green {
+    grid-row: 1;
+    grid-column: 10;
+    background-color: var(--player-green);
+    opacity: 0.3;
+}
+
+.stable-blue {
+    grid-row: 10;
+    grid-column: 10;
+    background-color: var(--player-blue);
+    opacity: 0.3;
+}
+
+.stable-yellow {
+    grid-row: 10;
+    grid-column: 1;
+    background-color: var(--player-yellow);
+    opacity: 0.3;
+}
+
+.center-zone {
+    grid-row: 7 / span 3;
+    grid-column: 7 / span 3;
+    background: radial-gradient(circle, gold, orange);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.track-cell {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    position: relative;
+}
+
+.track-cell.start-red {
+    background: var(--player-red);
+    opacity: 0.5;
+}
+
+/* Ký hiệu ô chức năng */
+.track-cell.tile-knowledge {
+    border-color: #0984e3;
+}
+
+.track-cell.tile-ethics {
+    border-color: #00b894;
+}
+
+.track-cell.tile-paradox {
+    border-color: #e17055;
+}
+
+.track-cell.tile-thinking {
+    border-color: #d63031;
+}
+
+.track-cell.tile-philosopher {
+    border-color: #fdcb6e;
+    box-shadow: 0 0 6px gold;
+}
+
+.tile-symbol {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.9rem;
+    pointer-events: none;
+}
+
+/* Piece Positioning */
+.piece-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+/* Home path cells */
+.home-cell {
+    border-radius: 4px;
+    opacity: 0.9;
+    position: relative;
+    z-index: 1;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.home-red {
+    background-color: var(--player-red);
+}
+
+.home-green {
+    background-color: var(--player-green);
+}
+
+.home-blue {
+    background-color: var(--player-blue);
+}
+
+.home-yellow {
+    background-color: var(--player-yellow);
+}
