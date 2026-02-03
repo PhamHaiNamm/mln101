@@ -17,16 +17,7 @@ const Board = () => {
         movePiece(player.id, piece.id);
     };
 
-    // Render Grid Cells (15x15)
-    const renderGrid = () => {
-        const cells = [];
-        const TOTAL_ROWS = 15;
-        const TOTAL_COLS = 15;
 
-        // We can iterate 0-14, 0-14
-        // But CSS Grid allows direct placement.
-        // We will render specific zones.
-    };
 
     // We will simply render the Board Container and place absolute children or Grid Children
 

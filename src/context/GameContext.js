@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useReducer, useEffect } from 'react';
-import { checkMove, calculateNewPosition, BOARD_SETTINGS, getTileType, getRandomQuestion } from '../utils/gameLogic';
+import { checkMove, BOARD_SETTINGS, getTileType, getRandomQuestion } from '../utils/gameLogic';
 import { GRID_MAP } from '../utils/gridMap';
 
 const GameContext = createContext();
