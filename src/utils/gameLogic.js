@@ -78,44 +78,44 @@ export const TILE_TYPE_INFO = {
 // Một vài câu hỏi mẫu cho từng loại ô (text tiếng Việt, code tiếng Anh)
 const QUESTIONS_BANK = {
     knowledge: [
-        { question: 'Trái Đất quay quanh Mặt Trời trong bao lâu?', options: ['1 tháng', '1 năm', '10 năm', '1 ngày'], correctIndex: 1 },
-        { question: 'Nước sôi ở bao nhiêu độ C?', options: ['90°C', '100°C', '110°C', '80°C'], correctIndex: 1 },
-        { question: 'Thủ đô của Việt Nam là?', options: ['TP.HCM', 'Đà Nẵng', 'Hà Nội', 'Huế'], correctIndex: 2 },
-        { question: 'Đỉnh núi cao nhất thế giới?', options: ['Fansipan', 'Everest', 'Phú Sĩ', 'K2'], correctIndex: 1 },
-        { question: 'Mặt trời mọc ở hướng nào?', options: ['Đông', 'Tây', 'Nam', 'Bắc'], correctIndex: 0 },
-        { question: 'Loài vật nào được xem là chúa sơn lâm?', options: ['Sư tử', 'Hổ', 'Báo', 'Voi'], correctIndex: 1 },
-        { question: 'Một năm có bao nhiêu tháng có 28 ngày?', options: ['1', '12 (tháng nào cũng có)', '6', '2'], correctIndex: 1 },
-        { question: 'Ai là người đầu tiên đặt chân lên Mặt Trăng?', options: ['Gagarin', 'Neil Armstrong', 'Phạm Tuân', 'Buzz Aldrin'], correctIndex: 1 },
-        { question: 'Con vật nào chạy nhanh nhất trên cạn?', options: ['Báo Cheetah', 'Sư tử', 'Ngựa', 'Đà điểu'], correctIndex: 0 },
-        { question: 'Hành tinh nào gần Mặt Trời nhất?', options: ['Sao Kim', 'Sao Thủy', 'Sao Hỏa', 'Trái Đất'], correctIndex: 1 }
+        { question: 'Trong kinh tế chính trị Mác - Lênin, hàng hóa có mấy thuộc tính cơ bản?', options: ['1', '2', '3', '4'], correctIndex: 1 },
+        { question: 'Hai thuộc tính cơ bản của hàng hóa là gì?', options: ['Giá trị sử dụng và giá trị', 'Giá cả và lợi nhuận', 'Tiền tệ và thị trường', 'Cung và cầu'], correctIndex: 0 },
+        { question: 'Lao động nào tạo ra giá trị của hàng hóa?', options: ['Lao động cụ thể', 'Lao động trừu tượng', 'Lao động quản lý', 'Lao động thủ công'], correctIndex: 1 },
+        { question: 'Thước đo lượng giá trị của hàng hóa là gì?', options: ['Chi phí quảng cáo', 'Thời gian lao động xã hội cần thiết', 'Mức độ khan hiếm tự nhiên', 'Sở thích người mua'], correctIndex: 1 },
+        { question: 'Tiền tệ ra đời từ đâu theo quan điểm Mác?', options: ['Do nhà nước sáng tạo tùy ý', 'Từ sự phát triển lâu dài của trao đổi hàng hóa', 'Do ngân hàng phát minh', 'Từ hoạt động từ thiện'], correctIndex: 1 },
+        { question: 'Sức lao động trở thành hàng hóa khi nào?', options: ['Khi người lao động có tư liệu sản xuất', 'Khi người lao động tự do và không có tư liệu sản xuất cần thiết', 'Khi tiền lương tăng cao', 'Khi doanh nghiệp nhà nước phát triển'], correctIndex: 1 },
+        { question: 'Giá trị sức lao động được quyết định bởi yếu tố nào?', options: ['Chi phí sản xuất ra tư liệu sản xuất', 'Giá cả của máy móc', 'Giá trị tư liệu sinh hoạt cần thiết để tái sản xuất sức lao động', 'Mức lãi suất ngân hàng'], correctIndex: 2 },
+        { question: 'Giá trị thặng dư là phần giá trị dôi ra ngoài...', options: ['Chi phí nguyên vật liệu', 'Giá trị sức lao động của công nhân', 'Thuế doanh nghiệp', 'Khấu hao máy móc'], correctIndex: 1 },
+        { question: 'Tư bản bất biến là bộ phận tư bản đầu tư vào...', options: ['Sức lao động', 'Máy móc, nhà xưởng, nguyên liệu', 'Tiền lương quản lý', 'Chi phí bán hàng'], correctIndex: 1 },
+        { question: 'Tư bản khả biến là bộ phận tư bản dùng để mua...', options: ['Cổ phiếu', 'Nguyên vật liệu', 'Sức lao động', 'Đất đai'], correctIndex: 2 }
     ],
     ethics: [
-        { question: 'Nhặt được của rơi?', options: ['Giữ luôn', 'Vứt đi', 'Tìm người trả lại', 'Chia bạn bè'], correctIndex: 2 },
-        { question: 'Thấy người già qua đường?', options: ['Lờ đi', 'Giúp đỡ', 'Cười nhạo', 'Quay video'], correctIndex: 1 },
-        { question: 'Bạn mượn đồ nhưng làm hỏng?', options: ['Giấu đi', 'Nói dối', 'Xin lỗi và đền bù', 'Đổ thừa'], correctIndex: 2 },
-        { question: 'Thấy bạn bị bắt nạt?', options: ['Tham gia', 'Cổ vũ', 'Báo thầy cô/người lớn', 'Quay đi'], correctIndex: 2 },
-        { question: 'Đi siêu thị thấy thừa tiền thối?', options: ['Cầm luôn', 'Trả lại thu ngân', 'Mua kẹo', 'Cho người nghèo'], correctIndex: 1 },
-        { question: 'Xếp hàng nơi công cộng?', options: ['Chen ngang', 'Xếp ngay ngắn', 'Đẩy người trước', 'Nhờ giữ chỗ'], correctIndex: 1 },
-        { question: 'Làm bài kiểm tra?', options: ['Quay cóp', 'Tự làm', 'Nhìn bài bạn', 'Hỏi bài'], correctIndex: 1 },
-        { question: 'Thấy rác nơi công cộng?', options: ['Vứt thêm', 'Kệ nó', 'Nhặt bỏ thùng rác', 'Đá đi'], correctIndex: 2 }
+        { question: 'Trong nền sản xuất hàng hóa, mục tiêu của người sản xuất là gì?', options: ['Tạo ra sản phẩm để tự tiêu dùng hoàn toàn', 'Sản xuất để trao đổi, bán trên thị trường', 'Sản xuất để cất trữ vô thời hạn', 'Ngừng lưu thông hàng hóa'], correctIndex: 1 },
+        { question: 'Khi năng suất lao động xã hội tăng, lượng giá trị của một đơn vị hàng hóa thường...', options: ['Tăng lên', 'Giảm xuống', 'Không đổi tuyệt đối', 'Tăng gấp đôi'], correctIndex: 1 },
+        { question: 'Nếu thời gian lao động cá biệt thấp hơn thời gian lao động xã hội cần thiết, người sản xuất có xu hướng...', options: ['Bị lỗ ngay', 'Thu lợi thế trong cạnh tranh', 'Không thể bán hàng', 'Phải ngừng sản xuất'], correctIndex: 1 },
+        { question: 'Trong lưu thông hàng hóa giản đơn, công thức vận động là...', options: ['T - H - T', 'H - T - H', 'T - T - H', 'H - H - T'], correctIndex: 1 },
+        { question: 'Công thức chung của tư bản là...', options: ['H - T - H', 'T - H - T\'', 'T - H - H', 'H - H - T'], correctIndex: 1 },
+        { question: 'Nguồn gốc trực tiếp của giá trị thặng dư nằm ở đâu?', options: ['Trong lưu thông thuần túy', 'Trong sản xuất, do lao động làm thuê tạo ra', 'Trong hoạt động quảng bá sản phẩm', 'Trong tiêu dùng cá nhân'], correctIndex: 1 },
+        { question: 'Tích lũy tư bản là quá trình...', options: ['Dùng toàn bộ giá trị thặng dư để tiêu dùng', 'Biến một phần giá trị thặng dư thành tư bản phụ thêm', 'Giảm quy mô sản xuất', 'Xóa bỏ cạnh tranh'], correctIndex: 1 },
+        { question: 'Quy luật giá trị yêu cầu sản xuất và trao đổi hàng hóa dựa trên...', options: ['Ý muốn chủ quan của người bán', 'Thời gian lao động xã hội cần thiết', 'Mức lợi nhuận mong muốn', 'Sự áp đặt hành chính'], correctIndex: 1 }
     ],
     paradox: [
-        { question: 'Nghịch lý "Người nói dối": "Tôi đang nói dối". Câu này?', options: ['Đúng', 'Sai', 'Vừa đúng vừa sai', 'Là nghịch lý'], correctIndex: 3 },
-        { question: 'Con gà có trước hay quả trứng có trước?', options: ['Con gà', 'Quả trứng', 'Không biết', 'Khoa học chưa chứng minh'], correctIndex: 3 },
-        { question: 'Nghịch lý Achilles và rùa: Achilles có đuổi kịp rùa không?', options: ['Có (thực tế)', 'Không (lý thuyết)', 'Chạy ngang nhau', 'Rùa thắng'], correctIndex: 0 },
-        { question: 'Nếu Pinocchio nói "Mũi tôi sẽ dài ra", chuyện gì xảy ra?', options: ['Mũi dài ra', 'Không dài', 'Nghịch lý', 'Mũi ngắn lại'], correctIndex: 2 },
-        { question: 'Chiếc tàu Theseus: Thay hết bộ phận thì còn là tàu cũ không?', options: ['Có', 'Không', 'Tùy quan điểm', 'Thành tàu mới'], correctIndex: 2 },
-        { question: 'Nghịch lý ông nội: Quay về quá khứ hại ông nội?', options: ['Được', 'Không thể', 'Tạo vũ trụ song song', 'Biến mất'], correctIndex: 2 }
+        { question: 'Mâu thuẫn cơ bản của sản xuất hàng hóa là mâu thuẫn giữa...', options: ['Lao động cụ thể và lao động trừu tượng', 'Giá trị sử dụng và giá trị', 'Tính chất tư nhân và tính chất xã hội của lao động', 'Cung và cầu'], correctIndex: 2 },
+        { question: 'Trong chủ nghĩa tư bản, mâu thuẫn cơ bản nhất là giữa...', options: ['Công nhân và nông dân', 'Tính chất xã hội hóa của sản xuất và hình thức chiếm hữu tư nhân tư bản chủ nghĩa', 'Thành thị và nông thôn', 'Sản xuất và tiêu dùng cá nhân'], correctIndex: 1 },
+        { question: 'Giá cả hàng hóa trên thị trường luôn xoay quanh yếu tố nào?', options: ['Sở thích ngẫu nhiên', 'Giá trị hàng hóa', 'Thu nhập cá nhân người bán', 'Khả năng quảng cáo'], correctIndex: 1 },
+        { question: 'Khi cung lớn hơn cầu trong điều kiện khác không đổi, giá cả thị trường có xu hướng...', options: ['Tăng', 'Giảm', 'Không đổi', 'Mất hoàn toàn'], correctIndex: 1 },
+        { question: 'Sản xuất thặng dư tương đối chủ yếu đạt được bằng cách nào?', options: ['Kéo dài ngày lao động', 'Tăng cường độ bóc lột bằng roi vọt', 'Nâng cao năng suất lao động xã hội', 'Giảm quy mô sản xuất'], correctIndex: 2 },
+        { question: 'Khủng hoảng kinh tế trong chủ nghĩa tư bản phản ánh mâu thuẫn giữa...', options: ['Sản xuất và lưu thông tiền mặt', 'Tính tổ chức trong từng doanh nghiệp và tính vô chính phủ của toàn xã hội', 'Nhu cầu cá nhân và thời tiết', 'Nông nghiệp và công nghiệp nhẹ'], correctIndex: 1 }
     ],
     thinking: [
-        { question: 'Con gì buổi sáng đi 4 chân, trưa 2 chân, tối 3 chân?', options: ['Con chó', 'Con người', 'Con khỉ', 'Con mèo'], correctIndex: 1 },
-        { question: 'Cái gì càng rửa càng bẩn?', options: ['Nước', 'Quần áo', 'Bát đĩa', 'Xe'], correctIndex: 0 },
-        { question: 'Tháng nào ngắn nhất trong năm?', options: ['Tháng 2', 'Tháng 5', 'Tháng 12', 'Tháng 3'], correctIndex: 0 },
-        { question: 'Cái gì thuộc về bạn nhưng người khác dùng nhiều hơn?', options: ['Tiền', 'Tên của bạn', 'Xe', 'Điện thoại'], correctIndex: 1 },
-        { question: 'Bỏ ngoài nướng trong, ăn ngoài bỏ trong là gì?', options: ['Khoai lang', 'Bắp ngô', 'Trứng gà', 'Mía'], correctIndex: 1 },
-        { question: 'Cái gì có cổ nhưng không có miệng?', options: ['Cái chai', 'Cái áo', 'Con hươu', 'Cái bình'], correctIndex: 1 },
-        { question: 'Cái gì chặt không đứt, bứt không rời?', options: ['Dây thừng', 'Nước', 'Tơ nhện', 'Tình yêu'], correctIndex: 1 },
-        { question: 'Có 3 quả táo, lấy đi 2 quả. Bạn còn mấy quả?', options: ['1', '2', '0', '3'], correctIndex: 1 }
+        { question: 'Một vật có ích nhưng không dùng để trao đổi thì theo Mác, nó là...', options: ['Hàng hóa hoàn chỉnh', 'Giá trị thặng dư', 'Giá trị sử dụng nhưng chưa phải hàng hóa', 'Tư bản cho vay'], correctIndex: 2 },
+        { question: 'Nếu một công nhân tạo ra giá trị mới 12 giờ nhưng chỉ cần 6 giờ để tái tạo giá trị sức lao động, thì 6 giờ còn lại tạo ra...', options: ['Khấu hao', 'Giá trị thặng dư', 'Địa tô', 'Chi phí lưu thông'], correctIndex: 1 },
+        { question: 'Trong sản xuất tư bản chủ nghĩa, bộ phận tư bản nào tạo ra giá trị mới?', options: ['Tư bản bất biến', 'Tư bản thương nghiệp', 'Tư bản khả biến', 'Tư bản cố định'], correctIndex: 2 },
+        { question: 'Khi giá trị tư liệu sinh hoạt cần thiết của công nhân giảm xuống, giá trị sức lao động thường...', options: ['Tăng', 'Giảm', 'Không thể xác định', 'Tăng vô hạn'], correctIndex: 1 },
+        { question: 'Một doanh nghiệp đổi mới công nghệ làm năng suất tăng trước mức trung bình xã hội. Trong ngắn hạn, doanh nghiệp đó có thể thu được...', options: ['Giá trị thặng dư siêu ngạch', 'Địa tô chênh lệch', 'Thuế gián thu', 'Lợi tức ngân hàng'], correctIndex: 0 },
+        { question: 'Trong tuần hoàn tư bản sản xuất, giai đoạn mở đầu thường được biểu hiện bằng...', options: ['T - H', 'H\' - T\'', 'SX - H', 'T - T\''], correctIndex: 0 },
+        { question: 'Lợi nhuận theo kinh tế chính trị Mác - Lênin là hình thức biến tướng của...', options: ['Giá trị sử dụng', 'Giá trị thặng dư', 'Chi phí sản xuất', 'Tiền công'], correctIndex: 1 },
+        { question: 'Nếu nhà tư bản kéo dài ngày lao động trong khi thời gian lao động cần thiết không đổi, họ đang tạo ra chủ yếu...', options: ['Giá trị thặng dư tuyệt đối', 'Giá trị thặng dư tương đối', 'Địa tô tuyệt đối', 'Lợi nhuận thương nghiệp'], correctIndex: 0 }
     ]
 };
 
